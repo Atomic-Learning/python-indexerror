@@ -1,0 +1,19 @@
+{
+    "title": "Python: IndexError",
+    "slug": "python-indexerror",
+    "description": "Understanding IndexError in Python. Covers what causes IndexError when accessing invalid indices in lists and strings, how to identify valid index ranges. Also explains why slicing with out-of-bounds indices doesn't raise an error.",
+    "authors": [
+        "chris-cooling"
+    ],
+    "tags": [
+        "python"
+    ],
+    "duration": 4,
+    "prerequisites": [
+        "python-exceptions",
+        "python-strings-indexing",
+        "python-lists-indexing"
+    ],
+    "related": [
+    ]
+}

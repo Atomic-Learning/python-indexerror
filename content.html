@@ -1,0 +1,44 @@
+
+<p>An <code class="language-python">IndexError</code> occurs when you try to access an index that doesn't exist in a sequence like a list or string. Understanding when and why this error happens is crucial for working with indexed data.</p>
+
+<h2>What Causes an IndexError?</h2>
+
+<p>IndexError is raised when you use an index (position number) that is outside the valid range for a list or string:</p>
+
+<py-cell>my_list = [1, 2, 3]
+print(my_list[10])</py-cell>
+
+<p>In this example, the list only has indices 0, 1, and 2 (three items), so trying to access index 10 raises an <code class="language-python">IndexError: list index out of range</code>.</p>
+
+<h2>Understanding Valid Indices</h2>
+
+<p>For a list or string with <em>n</em> items:</p>
+<ul>
+<li>Valid indices range from <code class="language-python">0</code> to <code class="language-python">n-1</code></li>
+<li>Negative indices range from <code class="language-python">-1</code> to <code class="language-python">-n</code></li>
+<li>Any index outside these ranges causes an IndexError</li>
+</ul>
+
+<py-cell>colors = ["red", "green", "blue"]
+# Valid indices: 0, 1, 2 (or -3, -2, -1)
+
+print(colors[0])    # red (valid)
+print(colors[-1])   # blue (valid)
+print(colors[3])    # IndexError (out of range)</py-cell>
+
+<h2>IndexError with Strings</h2>
+
+<p>Strings work the same way:</p>
+
+<py-cell>word = "hello"
+print(word[0])      # h
+print(word[4])      # o
+print(word[10])     # IndexError: string index out of range</py-cell>
+
+<h2>Slicing Doesn't Cause IndexError</h2>
+
+<p>Slicing with out-of-bounds indices <em>doesn't</em> raise an error. Instead, Python returns what's available from the collection in the bounds specified:</p>
+
+<py-cell>my_list = [1, 2, 3]
+
+print(my_list[1:10])   # The slice stops at the earliest of the end of the list or the stop index</py-cell>
