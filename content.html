@@ -34,11 +34,3 @@ print(colors[3])    # IndexError (out of range)</py-cell>
 print(word[0])      # h
 print(word[4])      # o
 print(word[10])     # IndexError: string index out of range</py-cell>
-
-<h2>Slicing Doesn't Cause IndexError</h2>
-
-<p>Slicing with out-of-bounds indices <em>doesn't</em> raise an error. Instead, Python returns what's available from the collection in the bounds specified:</p>
-
-<py-cell>my_list = [1, 2, 3]
-
-print(my_list[1:10])   # The slice stops at the earliest of the end of the list or the stop index</py-cell>
