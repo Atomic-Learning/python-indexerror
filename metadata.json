@@ -11,8 +11,7 @@
     "duration": 4,
     "prerequisites": [
         "python-exceptions",
-        "python-strings-indexing",
-        "python-lists-indexing"
+        "python-indexing"
     ],
     "related": [
     ]
