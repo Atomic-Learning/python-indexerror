@@ -9,7 +9,7 @@ my_list = [1, 2, 3]
 print(my_list[10])
 ```
 
-In this example, the list only has indices 0, 1, and 2 (three items), so trying to access index 10 raises an `IndexError: list index out of range`{.python}.
+In this example, the list only has indices 0, 1, and 2 (three items), so trying to access index 10 raises an `IndexError:`{.python}, telling us the list index is out of range.
 
 # Understanding Valid Indices
 
