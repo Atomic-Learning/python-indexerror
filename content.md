@@ -16,9 +16,7 @@ In this example, the list only has indices 0, 1, and 2 (three items), so trying 
 For a list or string with `n`{.python} items:
 
 * Valid indices range from `0`{.python} to `n-1`{.python}
-
 * Negative indices range from `-1`{.python} to `-n`{.python}
-
 * Any index outside these ranges causes an IndexError
 
 ```py-cell
